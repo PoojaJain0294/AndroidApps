@@ -1,5 +1,6 @@
 package com.pooja.androidapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +10,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void buttonClicked(View view) {
         Log.i("info", "The button was clicked");
+        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+        startActivity(intent);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
